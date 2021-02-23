@@ -31,13 +31,13 @@ public class VotarNaCarolConKa {
                                                     //melhoria na direção em que o usuário foi deixado para visualizar a foto
             JavascriptExecutor js = ((JavascriptExecutor) navegador);
             js.executeScript("scroll(0, 500);");
-            Thread.sleep(300);
+            Thread.sleep(350);
 
             if(i<=0) {
                 Thread.sleep(3700);
                 //clica no botão de cancelar do anuncio
                 navegador.findElement(By.id("onesignal-slidedown-cancel-button")).click();
-                Thread.sleep(300);
+                Thread.sleep(450);
             }
             // ação de posicionar o mouse em cima da imagem para efeito de click da pagina + click sob a imagem
             Actions action = new Actions(navegador);
@@ -64,7 +64,7 @@ public class VotarNaCarolConKa {
             System.out.println("Teste src: " + builder.toString());
 
             // PREENCHER CAMPO COM O CODIGO
-            Thread.sleep(200);
+            Thread.sleep(250);
             navegador.findElement(By.xpath("//*[@cid=\"code\"]")).click();
             navegador.findElement(By.xpath("//*[@cid=\"code\"]")).sendKeys(builder.toString());
             navegador.findElement(By.xpath("//*[@value=\"Confirmar\"]")).click();
