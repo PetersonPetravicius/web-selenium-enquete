@@ -17,14 +17,14 @@ public class VotarNaCarolConKa {
 
         // ABRIR SITE DE VOTAÇÃO
 
-        System.setProperty("webdriver.chrome.driver", "c:\\temp\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");
         WebDriver navegador = new ChromeDriver();
         navegador.get("http://www.enquetebbb.com.br/bbb21/enquete/votar-bbb-quarto-paredao-bbb21");
         //maximizando a tela do navegador
         navegador.manage().window().maximize();
 
         // SELECIONAR PARTICIPANTE CAROL CONKA BBB21
-        for (int i = 0; i<=50000000; i++) {
+        for (int i = 0; i<=50; i++) {
                                                                      //encontra a foto da participante Carol Conka e direciona o usuário até ela
             WebElement element = navegador.findElement(By.xpath("//*[@src='https://cdn14.level99.com.br/image_resize.php?w=300&h=343&src=image/participantes/karol-conka-bbb21-P.jpg']"));
             ((JavascriptExecutor) navegador).executeScript("arguments[0].scrollIntoView(true);", element);
