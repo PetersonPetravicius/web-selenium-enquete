@@ -8,6 +8,8 @@ Para plena execução deste script você deverá se atentar aos checkpoint descr
 
 2 - Verificar se a URL da enquente ainda está disponivel.
 
+    http://www.enquetebbb.com.br/bbb21/enquete/votar-bbb-quarto-paredao-bbb21
+    
 3 - Verificar se os participantes da enquente são: Carol Conká / Gilberto / Arthur
 
     3.1 - É possivel adaptar o codigo para votar em outro participante, alterando as linhas: 29 / 44 / 45 para o xpath do novo participante que se deseja votar.
