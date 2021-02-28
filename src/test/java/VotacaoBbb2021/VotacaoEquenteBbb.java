@@ -45,6 +45,7 @@ public class VotacaoEquenteBbb {
 
             // POSIÇÃO CURSO SOBRE PARTICIPANTE
             Actions action = new Actions(navegador);
+            Thread.sleep(300);                                                                       // Apenas para deixar o efeito da pagina ser exibida para o usuario
             action.moveToElement(fotoParticipante).click().build().perform();
 
             //DESCOBRIR CODIGO CAPTCHA
@@ -52,14 +53,14 @@ public class VotacaoEquenteBbb {
             WebElement codigoImg = navegador.findElement(By.xpath(encontrarCodigo));
             codigo = codigoImg.getAttribute("src");
 
-            //ENVIANDO CODIGO PARA DESCRITOGRAFIA NA CASA CODIGOSPLIT
+            //ENVIANDO CODIGO PARA DESCRITOGRAFIA NA CLASSE CODIGOSPLIT
             codigo = CodigoSplit.decifarCodigo(codigo);
 
             // PREENCHER CAMPO COM O CODIGO
             wait.until(ExpectedConditions.elementToBeClickable(By.xpath(inputCodigo))).click();
             navegador.findElement(By.xpath(inputCodigo)).sendKeys(codigo);
             navegador.findElement(By.xpath(confirmarcodigo)).click();
-            Thread.sleep(500);
+            Thread.sleep(500);                                                                         //O modal de sucesso dessa pagina não foi possivel aplicar wait ele nao reconhecia o seletor
         }
     }
 }
