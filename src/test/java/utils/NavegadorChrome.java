@@ -14,7 +14,7 @@ public class NavegadorChrome {
         System.setProperty(execChromeDriver, dirChromeDriver);
         WebDriver nav = new ChromeDriver();
         nav.get(uriEnqueteBbb);
-        nav.manage().window().maximize();                               //maximizando a tela do navegador
+        nav.manage().window().maximize();                               // Maximiza a tela do navegador
         return nav;
     }
 }

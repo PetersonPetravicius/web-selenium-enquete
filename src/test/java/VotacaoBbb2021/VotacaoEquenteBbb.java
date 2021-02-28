@@ -23,10 +23,10 @@ public class VotacaoEquenteBbb {
         WebDriver navegador = NavegadorChrome.abrirChrome();
 
         //CRIANDO ESPERA EXPLICITA COM O WAIT
-        WebDriverWait wait = new WebDriverWait(navegador, 20);                                  //Artigo bom para estudo e referencia: https://medium.com/@lflucasferreira/entendendo-os-tipos-de-espera-no-selenium-webdriver-2b7adda4db59#
+        WebDriverWait wait = new WebDriverWait(navegador, 20);                                  // Artigo bom para estudo e referencia: https://medium.com/@lflucasferreira/entendendo-os-tipos-de-espera-no-selenium-webdriver-2b7adda4db59#
 
-        // SELECIONAR PARTICIPANTE
-        for (int i = 0; i<=10; i++) {
+        // LAÇO PARA REPETIR A VOTAÇÃO 10x)
+        for (int i = 0; i<=9; i++) {
 
             // PRIMEIRO ACESSO AGUARDAR POPUP CHATO
             if(i==0) {
@@ -60,7 +60,7 @@ public class VotacaoEquenteBbb {
             wait.until(ExpectedConditions.elementToBeClickable(By.xpath(inputCodigo))).click();
             navegador.findElement(By.xpath(inputCodigo)).sendKeys(codigo);
             navegador.findElement(By.xpath(confirmarcodigo)).click();
-            Thread.sleep(500);                                                                         //O modal de sucesso dessa pagina não foi possivel aplicar wait ele nao reconhecia o seletor
+            Thread.sleep(500);                                                                         // O modal de sucesso dessa pagina não foi possivel aplicar wait ele nao reconhecia o seletor
         }
     }
 }
