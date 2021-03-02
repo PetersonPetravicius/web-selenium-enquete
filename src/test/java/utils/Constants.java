@@ -1,5 +1,5 @@
 package utils;
-
+import VotacaoBbb2021.*;
 
 public class Constants {
 
@@ -8,9 +8,10 @@ public class Constants {
     public static String dirChromeDriver = "C:\\driversWeb\\chromedriver.exe";          // Altere aqui o diretorio onde está o seu ChromeDriver
     public static String uriEnqueteBbb = "http://www.enquetebbb.com.br/bbb21/enquete/votar-bbb-quinto-paredao-bbb21";
 
+
     // VOTACAOBBB2021
-    public static String participante = "Lumena";                                        // Altere aqui o nome do participante para votar
-    public static String encontrarParticipante = "//*[@alt=\""+participante+"\"]";
+    public static String encontrar1 = "//*[@alt=\"";
+    public static String encontrar2 = "\"]";
     public static String posicionarParticipanteTela = "arguments[0].scrollIntoView(true);";
     public static String popUpChato = "onesignal-slidedown-cancel-button";
     public static String encontrarCodigo = "//*[@id=\"voto_ocultar\"]/img";

@@ -1,6 +1,6 @@
 "# SeleniumWebDriver-EnqueteBbb2021" 
 
-Para execução deste script você deverá se atentar aos checkpoint descritos abaixo:
+Para execução deste robô você deverá se atentar aos checkpoint descritos abaixo:
 
 1 - Sistema Operacional: 
 
@@ -9,12 +9,12 @@ Para execução deste script você deverá se atentar aos checkpoint descritos a
          
 2 - Disponibilidade da Enquete:
 
-    2.1 a URL http://www.enquetebbb.com.br/bbb21/enquete/votar-bbb-quarto-paredao-bbb21 deve estar disponivel com alguma enquete.
+    2.1 A URL http://www.enquetebbb.com.br/bbb21/enquete/votar-bbb-quarto-paredao-bbb21 deve estar disponivel com alguma enquete.
     
 3 - Participantes atuais da Enquete:
 
-    3.1 - Você deve alterar a linha 11 da classe "Constants" para o nome de um dos participantes da enquete atual que deseja votar.
-        3.2 - Caso o site não esteja mais disponível, você pode verificar uma evidência do funcionamento desse codigo no meu Google Drive: https://drive.google.com/file/d/1LQD0IYpCM3l5LS-mXblr9ghdLLIhyNay/view?usp=sharing
+    3.1 Você deverá selecionar apenas participantes que estiverem emparedados na semana.
+        3.2 Caso o Bbb tenha acabado e você deseja ver como o codigo era executado, está disponivel um video evidencia no meu Drive: https://drive.google.com/file/d/1AT0MBz1KMp4uOzRSJBTGMM_9XUIlJCuG/view?usp=sharing
 
 4 - Descritografia do Captcha:
 

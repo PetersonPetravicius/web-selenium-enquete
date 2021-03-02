@@ -1,5 +1,4 @@
 Caso tente reproduzir este codigo e o site da enquete não esteja mais disponivel,
-disponibilizei no link abaixo um video de teste onde o robo executa os votos automaticamente
-na participante Karol Conká.
+disponibilizei no link abaixo um video de teste onde o robo executa os votos automaticamente no participante selecionado.
 
-Google Drive: https://drive.google.com/file/d/1LQD0IYpCM3l5LS-mXblr9ghdLLIhyNay/view?usp=sharing
+Google Drive: https:https://drive.google.com/file/d/1AT0MBz1KMp4uOzRSJBTGMM_9XUIlJCuG/view?usp=sharing
