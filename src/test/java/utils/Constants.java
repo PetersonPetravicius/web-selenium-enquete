@@ -6,7 +6,7 @@ public class Constants {
     // CLASSE NAVEGADOR CHROME
     public static String execChromeDriver = "webdriver.chrome.driver";
     public static String dirChromeDriver = "C:\\driversWeb\\chromedriver.exe";          // Altere aqui o diretorio onde está o seu ChromeDriver
-    public static String uriEnqueteBbb = "http://www.enquetebbb.com.br/bbb21/enquete/enquete-bbb-21-quem-deve-ser-o-quinto-eliminado";
+    public static String uriEnqueteBbb = "http://www.enquetebbb.com.br/bbb21/enquete/votar-bbb-quinto-paredao-bbb21";
 
     // VOTACAOBBB2021
     public static String participante = "Lumena";                                        // Altere aqui o nome do participante para votar

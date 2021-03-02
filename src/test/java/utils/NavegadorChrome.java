@@ -3,12 +3,14 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import javax.jws.WebMethod;
+
 import static utils.Constants.*;
 
 public class NavegadorChrome {
 
-    @Test
-    public static WebDriver abrirChrome() throws InterruptedException {
+    @WebMethod
+    public static WebDriver abrirChrome() {
 
         // ABRIR SITE DE VOTAÇÃO
         System.setProperty(execChromeDriver, dirChromeDriver);
